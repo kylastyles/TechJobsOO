@@ -99,8 +99,10 @@ namespace TechJobs.Data
                           where j.ID == id
                           select j;
 
+            //System.InvalidOperationException: 'Sequence contains no elements'
             return results.Single();
         }
+
 
     }
 }
